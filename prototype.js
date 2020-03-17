@@ -3,6 +3,8 @@
 //==================================
 //----------------------------
 // 比較兩個陣列是否完全相同
+// Compare two arrays if they are equal.
+// 二つの配列を比べる。
 //----------------------------
 Array.prototype.equals = function (arr) {
     if (!Array.isArray(arr)) return console.error("Please input Array data.");
@@ -70,6 +72,8 @@ Array.prototype.equals = function (arr) {
 //==================================
 //----------------------------
 // 取得特定日期在當年的週數
+// Get week number of year.
+// 対象の日付が一年の何周目なのか
 //----------------------------
 Date.prototype.getWeek = function () {
     if (this == 'Invalid Date') {

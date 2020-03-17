@@ -1,27 +1,10 @@
 # Index
-### \- Date
-* [getWeek](#getWeek)
- 
 ### \- Array
 * [equals](#equals)
 
----
-
-## Date
-### getWeek()
-Get week number of year.
-#### example1:
-```
-new Date('2020/12/3').getWeek();
-```
-*result: 49*
-
-#### example2:
-```
-new Date(1555430400000).getWeek();
-```
-*result: 16*
-
+### \- Date
+* [getWeek](#getWeek)
+ 
 ---
 
 ## Array
@@ -107,3 +90,20 @@ let array2 = [
 array1.equals(array2)
 ```
 *result: false*
+
+---
+
+## Date
+### getWeek()
+Get week number of year.
+#### example1:
+```
+new Date('2020/12/3').getWeek();
+```
+*result: 49*
+
+#### example2:
+```
+new Date(1555430400000).getWeek();
+```
+*result: 16*
