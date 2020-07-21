@@ -2,7 +2,7 @@
 //               Array
 //==================================
 //----------------------------
-// 比較兩個陣列是否完全相同
+// 比較兩個陣列是否完全相同。
 // Compare two arrays if they are equal.
 // 二つの配列を比べる。
 //----------------------------
@@ -67,13 +67,31 @@ Array.prototype.equals = function (arr) {
         return true;
     }
 }
+
+//----------------------------
+// 數學中的softmax函數。
+// Softmax function in mathematics.
+// 数学のsoftmax関数。
+//----------------------------
+Array.prototype.softmax = function () {
+    let sum = this.map(item => {
+        return Math.exp(item);
+    })
+    .reduce((a,b) => {
+        return a + b
+    });
+    return this.map(item => {
+        return Math.exp(item) / sum;
+    })
+}
+
 //==================================
 //               Date
 //==================================
 //----------------------------
-// 取得特定日期在當年的週數
+// 取得特定日期在當年的週數。
 // Get week number of year.
-// 対象の日付が一年の何周目なのか
+// 対象の日付が一年の何周目なのか。
 //----------------------------
 Date.prototype.getWeek = function () {
     if (this == 'Invalid Date') {
